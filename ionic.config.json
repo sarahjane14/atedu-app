@@ -1,0 +1,7 @@
+{
+  "name": "atedu-ionic-poc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
