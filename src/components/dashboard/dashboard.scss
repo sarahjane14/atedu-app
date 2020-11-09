@@ -1,0 +1,143 @@
+.dashboard-wrapper {
+  padding: 10px;
+  background-color: #F4F4F4;
+}
+
+.dashboard-header {
+  background: url('/assets/greetings-bg.png') center no-repeat;
+  background-size: cover;
+  background-color: #6C35D4;
+  padding: 15px 125px 15px 15px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: none;
+
+  span {
+    width: 120px;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+  }
+}
+
+.dashboard-attendance {  
+  padding: 15px;
+  color: #4B7C06;
+  border-radius: 10px;
+  box-shadow: none;
+  h6 {
+    font-weight: bold;
+  }
+}
+
+.dashboard-schedule {  
+  margin: 40px 10px;
+  border-radius: 10px;
+
+  .schedule-card {
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .btn-todo {    
+    font-size: 12px;
+  }
+  .btn-todo .button-native {
+    --box-shadow: none !important;
+  }
+
+  .schedule-wrapper {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll !important;
+    overflow-y: hidden;
+    width: max-content;
+    width: 100%;
+  }
+
+  .schedule-card {
+    width: 500px;
+    max-width: 500px;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 100%;
+    margin-right: 24px;
+  }
+}
+
+.dashboard-due {  
+  margin: 40px 10px;
+  border-radius: 10px;
+
+  .due-card {
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .btn-todo {    
+    font-size: 12px;
+  }
+  .btn-todo .button-native {
+    --box-shadow: none !important;
+  }
+
+  .due-wrapper {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll !important;
+    overflow-y: hidden;
+    width: max-content;
+    width: 100%;
+  }
+
+  .due-card {
+    width: 500px;
+    max-width: 500px;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 100%;
+    margin-right: 24px;
+  }
+
+  .due-title-card {
+    font-weight: 600;
+    margin: 5px;
+  }
+
+  .due-date {
+    float: left;
+    margin-right: 25px;
+  }
+
+  .due-subject {
+    display: list-item;
+    float: left;
+  }
+
+  .due-img {
+    width: 70px;
+    background-color: #F9F6FD;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 0;
+    vertical-align: middle;
+
+  }
+}
+
+.dashboard-news {  
+  margin: 40px 10px;
+  border-radius: 10px;
+
+
+}

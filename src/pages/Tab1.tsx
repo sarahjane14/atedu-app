@@ -3,13 +3,14 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonSearchbar } fr
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import Header from '../components/header/header';
+import Dashboard from '../components/dashboard/dashboard';
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
       <Header name="Tab 1 page"></Header>
       <IonContent >
-        <ExploreContainer name="Tab 1 page" />
+        <Dashboard name="Tab 1 page" />
       </IonContent>
     </IonPage>
   );
