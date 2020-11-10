@@ -11,7 +11,7 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
     <div className="dashboard-wrapper">
       
       <IonCard className="dashboard-header">
-        <h6>Hi, Mona</h6>
+        <h5>Hi, Mona</h5>
         <p>We prepare this dashboard to help and guide you all day!</p>
         <span><img src="/assets/greetings-boy.png" /></span>
       </IonCard>
