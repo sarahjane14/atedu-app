@@ -4,6 +4,7 @@ import { initializeIcons } from '@uifabric/icons';
 import { getIconClassName } from '@uifabric/styling';
 import { list, pencil, alarmOutline, schoolOutline } from 'ionicons/icons';
 import greetingsBoy from '../../assets/images/greetings-boy.png';
+import newsOne from '../../assets/images/news.png';
 import './dashboard.scss';
 initializeIcons();
 
@@ -18,7 +19,7 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
       <IonCard className="dashboard-header ion-margin">
         <h5>Hi, Mona</h5>
         <p>We prepare this dashboard to help and guide you all day!</p>
-        <IonImg src={greetingsBoy} className="align-self-end"/>
+        <IonImg src={greetingsBoy} className="align-self-end" />
       </IonCard>
 
       <IonCard className="dashboard-attendance ion-margin">
@@ -137,9 +138,9 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
                 <IonCol>
                   <IonCardTitle >Answer page 95</IonCardTitle>
                   <IonCardSubtitle>
-                  <IonIcon icon={alarmOutline} slot="start" />
-                  <span className="due-date">Today ate 9AM</span>
-                  <span className="due-subject">Engelsk B</span>
+                    <IonIcon icon={alarmOutline} slot="start" />
+                    <span className="due-date">Today ate 9AM</span>
+                    <span className="due-subject">Engelsk B</span>
                   </IonCardSubtitle>
                 </IonCol>
               </IonRow>
@@ -156,9 +157,9 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
                 <IonCol>
                   <IonCardTitle >Answer page 95</IonCardTitle>
                   <IonCardSubtitle>
-                  <IonIcon icon={alarmOutline} slot="start" />
-                  <span className="due-date">Today ate 9AM</span>
-                  <span className="due-subject">Engelsk B</span>
+                    <IonIcon icon={alarmOutline} slot="start" />
+                    <span className="due-date">Today ate 9AM</span>
+                    <span className="due-subject">Engelsk B</span>
                   </IonCardSubtitle>
                 </IonCol>
               </IonRow>
@@ -172,7 +173,8 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
 
         <div className="news-wrapper">
           <IonCard className="news-card">
-            <img className="news-img" src="/assets/news.png" />
+            <IonImg className="news-img" src={newsOne} />
+            {/* <img  src="/assets/news.png" /> */}
             <div className="news-desc">
               <p>
                 Teaching strategy for distance esdducation under Covid-19 for
