@@ -3,6 +3,7 @@ import { IonHeader, IonCard, IonImg, IonGrid, IonRow, IonCol, IonButton, IonTool
 import { initializeIcons } from '@uifabric/icons';
 import { getIconClassName } from '@uifabric/styling';
 import { list, pencil, alarmOutline, schoolOutline } from 'ionicons/icons';
+import greetingsBoy from '../../assets/images/greetings-boy.png';
 import './dashboard.scss';
 initializeIcons();
 
@@ -15,9 +16,9 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
     <IonContent className="dashboard-wrapper">
 
       <IonCard className="dashboard-header ion-margin">
-        <h6>Hi, Mona</h6>
+        <h5>Hi, Mona</h5>
         <p>We prepare this dashboard to help and guide you all day!</p>
-        <span><img src="/assets/greetings-boy.png" /></span>
+        <IonImg src={greetingsBoy} className="align-self-end"/>
       </IonCard>
 
       <IonCard className="dashboard-attendance ion-margin">
