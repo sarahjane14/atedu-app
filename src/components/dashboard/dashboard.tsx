@@ -1,78 +1,121 @@
 import React from 'react';
-import { IonHeader, IonCard, IonImg, IonGrid, IonRow, IonCol, IonButton, IonToolbar, IonTitle, IonIcon, IonItem, IonLabel} from '@ionic/react';
-import { alarmOutline, schoolOutline } from 'ionicons/icons';
+import { IonHeader, IonCard, IonImg, IonGrid, IonRow, IonCol, IonButton, IonToolbar, IonTitle, IonIcon, IonItem, IonLabel, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonContent } from '@ionic/react';
+import { initializeIcons } from '@uifabric/icons';
+import { getIconClassName } from '@uifabric/styling';
+import { list, pencil, alarmOutline, schoolOutline } from 'ionicons/icons';
 import './dashboard.scss';
+initializeIcons();
+
 interface ContainerProps {
   name: string;
 }
 
 const Dashboard: React.FC<ContainerProps> = ({ name }) => {
   return (
-    <div className="dashboard-wrapper">
-      
-      <IonCard className="dashboard-header">
-        <h5>Hi, Mona</h5>
+    <IonContent className="dashboard-wrapper">
+
+      <IonCard className="dashboard-header ion-margin">
+        <h6>Hi, Mona</h6>
         <p>We prepare this dashboard to help and guide you all day!</p>
         <span><img src="/assets/greetings-boy.png" /></span>
       </IonCard>
 
-      <IonCard className="dashboard-attendance">
+      <IonCard className="dashboard-attendance ion-margin">
         <h6>95% Attendance</h6>
         <p>Keep it up!</p>
       </IonCard>
 
-      <section className="dashboard-schedule">
+      <section className="dashboard-schedule ion-margin">
         <h6>My Schedule</h6>
-        
+
         <div className="schedule-wrapper">
-          <IonCard className="schedule-card">
+          <IonCard className="schedule-card" >
             <IonGrid>
-              <IonRow>
-                <IonCol size="7" size-sm>
-                  <p>Engelsk B</p>
-                  <p>8:00-9:00</p>
-                  <IonButton type="button" className="primary --ion-color-primary btn-todo">
-                    1 To do
-                  </IonButton>
+              <IonRow className="ion-align-items-start">
+                <IonCol>
+                  <IonCardTitle >Engelsk B</IonCardTitle>
                 </IonCol>
-                <IonCol size="5" size-sm>
-                  <p>Up next</p>
-                  <p>R. 302 A</p>
+                <IonCol className="ion-align-self-end" size="auto">
+                  <IonCardSubtitle color="primary">
+                    <i className={`fl-icon ${getIconClassName('SkypeCircleClock')}`}></i>
+                          Up next
+                  </IonCardSubtitle>
+                </IonCol>
+              </IonRow>
+              <IonRow className="ion-align-items-start">
+                <IonCol>
+                  <IonCardSubtitle>8:00-9:00</IonCardSubtitle>
+                </IonCol>
+                <IonCol className="ion-align-self-end" size-sm size="auto">
+                  <IonCardSubtitle>R. 302 A </IonCardSubtitle>
                 </IonCol>
               </IonRow>
             </IonGrid>
-          </IonCard>
-          <IonCard className="schedule-card">
             <IonGrid>
               <IonRow>
-                <IonCol size="7" size-sm>
-                  <p>Engelsk B</p>
-                  <p>8:00-9:00</p>
-                  <IonButton type="button" className="primary --ion-color-primary btn-todo">
-                    1 To do
-                  </IonButton>
-                </IonCol>
-                <IonCol size="5" size-sm>
-                  <p>Up next</p>
-                  <p>R. 302 A</p>
-                </IonCol>
+                <IonButton type="button" color="primary">
+                  <IonIcon slot="start" icon={list}></IonIcon> 1 To do
+                </IonButton>
               </IonRow>
             </IonGrid>
           </IonCard>
-          <IonCard className="schedule-card">
+          <IonCard className="schedule-card" >
+            <IonGrid>
+              <IonRow className="ion-align-items-start">
+                <IonCol>
+                  <IonCardTitle >Engelsk B</IonCardTitle>
+                </IonCol>
+                <IonCol className="ion-align-self-end" size="auto">
+                  <IonCardSubtitle color="primary">
+                    <i className={`fl-icon ${getIconClassName('SkypeCircleClock')}`}></i>
+                          Up next
+                  </IonCardSubtitle>
+                </IonCol>
+              </IonRow>
+              <IonRow className="ion-align-items-start">
+                <IonCol>
+                  <IonCardSubtitle>8:00-9:00</IonCardSubtitle>
+                </IonCol>
+                <IonCol className="ion-align-self-end" size-sm size="auto">
+                  <IonCardSubtitle>R. 302 A </IonCardSubtitle>
+                </IonCol>
+              </IonRow>
+            </IonGrid>
             <IonGrid>
               <IonRow>
-                <IonCol size="7" size-sm>
-                  <p>Engelsk B</p>
-                  <p>8:00-9:00</p>
-                  <IonButton type="button" className="primary --ion-color-primary btn-todo">
-                    1 To do
-                  </IonButton>
+                <IonButton type="button" color="primary">
+                  <IonIcon slot="start" icon={list}></IonIcon> 1 To do
+                </IonButton>
+              </IonRow>
+            </IonGrid>
+          </IonCard>
+          <IonCard className="schedule-card" >
+            <IonGrid>
+              <IonRow className="ion-align-items-start">
+                <IonCol>
+                  <IonCardTitle >Engelsk B</IonCardTitle>
                 </IonCol>
-                <IonCol size="5" size-sm>
-                  <p>Up next</p>
-                  <p>R. 302 A</p>
+                <IonCol className="ion-align-self-end" size="auto">
+                  <IonCardSubtitle color="primary">
+                    <i className={`fl-icon ${getIconClassName('SkypeCircleClock')}`}></i>
+                          Up next
+                  </IonCardSubtitle>
                 </IonCol>
+              </IonRow>
+              <IonRow className="ion-align-items-start">
+                <IonCol>
+                  <IonCardSubtitle>8:00-9:00</IonCardSubtitle>
+                </IonCol>
+                <IonCol className="ion-align-self-end" size-sm size="auto">
+                  <IonCardSubtitle>R. 302 A </IonCardSubtitle>
+                </IonCol>
+              </IonRow>
+            </IonGrid>
+            <IonGrid>
+              <IonRow>
+                <IonButton type="button" color="primary">
+                  <IonIcon slot="start" icon={list}></IonIcon> 1 To do
+                </IonButton>
               </IonRow>
             </IonGrid>
           </IonCard>
@@ -81,46 +124,51 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
 
       <section className="dashboard-due">
         <h6>Due Soon</h6>
-        
-      <div className="due-wrapper">
-        <IonCard className="due-card">
-          <IonGrid>
-            <IonRow>
-              <IonCol size="3" size-sm>
-                <IonImg className="due-img" src="/assets/pen.png" />
-              </IonCol>
-              <IonCol size="9" size-sm>
-                <p className="due-title-card">Answer page 95</p>
-                <span className="due-date"><span>
-                  <IonIcon className="due-icon" icon={alarmOutline}></IonIcon>
-                </span>Today ate 9AM</span>
-                <span className="due-subject">Engelsk B</span>
-              </IonCol>
-            </IonRow>
-          </IonGrid>
-        </IonCard>
-        <IonCard className="due-card">
-          <IonGrid>
-            <IonRow>
-              <IonCol size="3" size-sm>
-                <IonImg className="due-img" src="/assets/excel.png" />
-              </IonCol>
-              <IonCol size="9" size-sm>
-                <p className="due-title-card">Answer page 95</p>
-                <span className="due-date"><span>
-                  <IonIcon className="due-icon" icon={alarmOutline}></IonIcon>
-                </span>Today ate 9AM</span>
-                <span className="due-subject">Engelsk B</span>
-              </IonCol>
-            </IonRow>
-          </IonGrid>
-        </IonCard>
+        <div className="due-wrapper">
+          <IonCard className="due-card">
+            <IonGrid>
+              <IonRow>
+                <IonCol size="auto" className="ion-align-self-start">
+                  <div className="todo-icon homework">
+                    <IonIcon icon={pencil} />
+                  </div>
+                </IonCol>
+                <IonCol>
+                  <IonCardTitle >Answer page 95</IonCardTitle>
+                  <IonCardSubtitle>
+                  <IonIcon icon={alarmOutline} slot="start" />
+                  <span className="due-date">Today ate 9AM</span>
+                  <span className="due-subject">Engelsk B</span>
+                  </IonCardSubtitle>
+                </IonCol>
+              </IonRow>
+            </IonGrid>
+          </IonCard>
+          <IonCard className="due-card">
+            <IonGrid>
+              <IonRow>
+                <IonCol size="auto" className="ion-align-self-start">
+                  <div className="todo-icon excel">
+                    <img className="news-img" src="/assets/excel.png" />
+                  </div>
+                </IonCol>
+                <IonCol>
+                  <IonCardTitle >Answer page 95</IonCardTitle>
+                  <IonCardSubtitle>
+                  <IonIcon icon={alarmOutline} slot="start" />
+                  <span className="due-date">Today ate 9AM</span>
+                  <span className="due-subject">Engelsk B</span>
+                  </IonCardSubtitle>
+                </IonCol>
+              </IonRow>
+            </IonGrid>
+          </IonCard>
         </div>
       </section>
 
       <section className="dashboard-news">
         <h6>News</h6>
-        
+
         <div className="news-wrapper">
           <IonCard className="news-card">
             <img className="news-img" src="/assets/news.png" />
@@ -149,8 +197,7 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
       </section>
 
 
-    </div>
-    
+    </IonContent>
   );
 };
 
