@@ -1,5 +1,6 @@
 import React from 'react';
 import { IonHeader, IonCard, IonImg, IonGrid, IonRow, IonCol, IonButton, IonToolbar, IonTitle, IonIcon, IonItem, IonLabel} from '@ionic/react';
+import { alarmOutline, schoolOutline } from 'ionicons/icons';
 import './dashboard.scss';
 interface ContainerProps {
   name: string;
@@ -89,11 +90,10 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
                 <IonImg className="due-img" src="/assets/pen.png" />
               </IonCol>
               <IonCol size="9" size-sm>
-                <span>
-                <IonImg className="due-img" src="/assets/alarm-outline.svg" />
-                </span>
                 <p className="due-title-card">Answer page 95</p>
-                <span className="due-date">Today ate 9AM</span>
+                <span className="due-date"><span>
+                  <IonIcon className="due-icon" icon={alarmOutline}></IonIcon>
+                </span>Today ate 9AM</span>
                 <span className="due-subject">Engelsk B</span>
               </IonCol>
             </IonRow>
@@ -107,7 +107,9 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
               </IonCol>
               <IonCol size="9" size-sm>
                 <p className="due-title-card">Answer page 95</p>
-                <span className="due-date">Today ate 9AM</span>
+                <span className="due-date"><span>
+                  <IonIcon className="due-icon" icon={alarmOutline}></IonIcon>
+                </span>Today ate 9AM</span>
                 <span className="due-subject">Engelsk B</span>
               </IonCol>
             </IonRow>
@@ -120,35 +122,28 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
         <h6>News</h6>
         
         <div className="news-wrapper">
-          <IonCard className="due-card">
-            <IonGrid>
-              <IonRow>
-                <IonCol size="7" size-sm>
-                  <p>Answer page 95</p>
-                  <p>Today ate 9AM</p>
-                  <span>Engelsk B</span>
-                </IonCol>
-                <IonCol size="5" size-sm>
-                  <p>Up next</p>
-                  <p>R. 302 A</p>
-                </IonCol>
-              </IonRow>
-            </IonGrid>
+          <IonCard className="news-card">
+            <img className="news-img" src="/assets/news.png" />
+            <div className="news-desc">
+              <p>
+                Teaching strategy for distance esdducation under Covid-19 for
+                primary
+              </p>
+              <span className="news-school"><IonIcon className="news-icon" icon={schoolOutline}></IonIcon>School News</span>
+              <span className="news-time">1 hour ago</span>
+            </div>
           </IonCard>
-          <IonCard className="due-card">
-            <IonGrid>
-              <IonRow>
-                <IonCol size="7" size-sm>
-                  <p>Equation</p>
-                  <p>Tomorrow</p>
-                  <span>Matematik </span>
-                </IonCol>
-                <IonCol size="5" size-sm>
-                  <p>Up next</p>
-                  <p>R. 302 A</p>
-                </IonCol>
-              </IonRow>
-            </IonGrid>
+
+          <IonCard className="news-card">
+            <img className="news-img" src="/assets/news2.png" />
+            <div className="news-desc">
+              <p>
+                Teaching strategy for distance esdducation under Covid-19 for
+                primary
+              </p>
+              <span className="news-school"><IonIcon className="news-icon" icon={schoolOutline}></IonIcon>School News</span>
+              <span className="news-time">1 hour ago</span>
+            </div>
           </IonCard>
         </div>
       </section>
@@ -158,5 +153,7 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
     
   );
 };
+
+
 
 export default Dashboard;

@@ -1,3 +1,8 @@
+h6 {
+  font-weight: 700;
+  color: #736969;
+}
+
 .dashboard-wrapper {
   padding: 10px;
   background-color: #F4F4F4;
@@ -20,7 +25,7 @@
   }
 }
 
-.dashboard-attendance {  
+.dashboard-attendance {
   padding: 15px;
   color: #4B7C06;
   border-radius: 10px;
@@ -30,16 +35,16 @@
   }
 }
 
-.dashboard-schedule {  
+.dashboard-schedule {
   margin: 40px 10px;
-  border-radius: 10px;
 
   .schedule-card {
     margin: 0;
     box-shadow: none;
+    border-radius: 10px;
   }
 
-  .btn-todo {    
+  .btn-todo {
     font-size: 12px;
   }
   .btn-todo .button-native {
@@ -70,16 +75,16 @@
   }
 }
 
-.dashboard-due {  
+.dashboard-due {
   margin: 40px 10px;
-  border-radius: 10px;
 
   .due-card {
     margin: 0;
     box-shadow: none;
+    border-radius: 10px;
   }
 
-  .btn-todo {    
+  .btn-todo {
     font-size: 12px;
   }
   .btn-todo .button-native {
@@ -120,6 +125,7 @@
   }
 
   .due-subject {
+    color: #B1B3B5;
     display: list-item;
     float: left;
   }
@@ -133,11 +139,47 @@
     vertical-align: middle;
 
   }
+
+  .due-icon {
+    vertical-align: text-top;
+    font-size: 15px;
+    padding-right: 5px;
+  }
 }
 
-.dashboard-news {  
+.dashboard-news {
   margin: 40px 10px;
-  border-radius: 10px;
 
+  .news-card {
+    margin: 20px 0;
+    border-radius: 14px;
+  }
+  .news-desc {
+    padding: 15px;
+  }
 
+  .news-desc p {
+    font-weight: 700;
+    color: #000;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .news-school {
+    color: #9770E1;
+    font-weight: 700;
+
+    i {
+      font-weight: 700;
+    }
+  }
+
+  .news-icon {
+    padding: 0 10px 0 0;
+  }
+
+  .news-time {
+    float: right;
+    color: #adadad;
+  }
 }

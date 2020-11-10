@@ -8,20 +8,22 @@ import Dashboard from '../components/dashboard/dashboard';
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <Header name="Tab 1 page"></Header>
+      {/* <Header name="Tab 1 page"></Header> */}
       <IonContent fullscreen>
-        <Dashboard name="Tab 1 page" />
+        {/* <Dashboard name="Tab 1 page" />
       <IonHeader>
         <IonToolbar>
           <IonTitle>Tab 1</IonTitle>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader> 
+      <IonContent fullscreen>*/}
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Tab 1 page" />
+        <Dashboard name="Tab 1 page" />
       </IonContent>
     </IonPage>
   );
