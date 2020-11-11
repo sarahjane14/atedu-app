@@ -32,6 +32,7 @@ h6 {
   color: #4B7C06;
   border-radius: 10px;
   box-shadow: none;
+
   h6 {
     font-weight: bold;
   }
@@ -49,6 +50,7 @@ h6 {
   .btn-todo {
     font-size: 12px;
   }
+
   .btn-todo .button-native {
     --box-shadow: none !important;
   }
@@ -88,6 +90,7 @@ h6 {
   .btn-todo {
     font-size: 12px;
   }
+
   .btn-todo .button-native {
     --box-shadow: none !important;
   }
@@ -155,6 +158,7 @@ h6 {
     margin: 20px 0;
     border-radius: 14px;
   }
+
   .news-desc {
     padding: 15px;
   }
@@ -185,25 +189,60 @@ h6 {
   }
 }
 
-.todo-icon{
+.todo-icon {
   width: 43px;
   height: 49px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  &.homework{
+
+  &.homework {
     background-color: var(--ion-color-primary-light);
+
     ion-icon {
       color: var(--ion-color-primary);
       font-size: 2em;
     }
   }
-  &.excel{
+
+  &.excel {
     background-color: var(--ion-color-success-light);
-    img{
+
+    img {
       width: 28px;
     }
   }
-  
+
+}
+
+.mini-date {
+  height: 75px;
+  width: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  text-align: center;
+  color: var(--ion-color-primary);
+  border-radius: 5px;
+  .month {
+    background-color: var(--ion-color-primary);
+    color: #fff;
+    width: 100%;
+  }
+
+  .day {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+  }
+}
+
+ion-modal{
+  ion-avatar{
+    height: 40px;
+    width: 40px;
+  }
 }
