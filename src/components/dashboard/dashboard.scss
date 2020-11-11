@@ -1,5 +1,5 @@
 h6 {
-  font-weight: 700;
+  font-weight: 700 !important;
   color: #736969;
 }
 
@@ -32,13 +32,27 @@ h6 {
   color: #4B7C06;
   border-radius: 10px;
   box-shadow: none;
+
+  ion-img {
+    width: 60px;
+    float: left;
+    margin-right: 20px;
+  }
+
   h6 {
+    color: #4B7C06;
     font-weight: bold;
+    margin: 15px 0 0;
+  }
+
+  p {
+    margin: 5px;
   }
 }
 
 .dashboard-schedule {
   margin: 40px 10px;
+
 
   .schedule-card {
     margin: 0;
@@ -72,6 +86,13 @@ h6 {
     flex-grow: 0;
     flex-shrink: 0;
     margin-right: 24px;
+  }
+
+  .fl-icon {
+    float: left;
+    position: absolute;
+    top: 1px;
+    left: -24px;
   }
 }
 

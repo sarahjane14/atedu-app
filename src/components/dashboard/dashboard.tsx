@@ -5,6 +5,7 @@ import { getIconClassName } from '@uifabric/styling';
 import { list, pencil, alarmOutline, schoolOutline } from 'ionicons/icons';
 import greetingsBoy from '../../assets/images/greetings-boy.png';
 import newsOne from '../../assets/images/news.png';
+import pie from '../../assets/images/pie.png';
 import './dashboard.scss';
 initializeIcons();
 
@@ -23,6 +24,7 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
       </IonCard>
 
       <IonCard className="dashboard-attendance ion-margin">
+        <IonImg src={pie} className="align-self-end"></IonImg>
         <h6>95% Attendance</h6>
         <p>Keep it up!</p>
       </IonCard>
